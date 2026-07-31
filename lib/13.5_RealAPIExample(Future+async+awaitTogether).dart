@@ -1,4 +1,6 @@
-Future<String> getUserData() async {
+import 'dart:async';
+
+Future<String> getName() async {
 
   await Future.delayed(
     Duration(seconds: 2),
@@ -7,13 +9,14 @@ Future<String> getUserData() async {
   return "Tushar";
 }
 
+
 void main() async {
+  print("Loading.....");
 
-  print("Loading.......");
-
-  String userData = await getUserData();
-
-  print(userData);
+  String name = await getName();
+  print(name);
 
   print("Completed");
+
+  print("Demo of Asynchronous Programming");
 }
